@@ -9,6 +9,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/octicons.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css" />
   <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script>
+        function updatedAt(date) {
+          if (date) {
+            return ( moment(new Date(date)).fromNow() )
+          } 
+        }
+    </script>
 </head>
 <body>
   <div style="min-height: 100vh" class="d-flex flex-column">
@@ -26,14 +35,18 @@
     <main role="main" class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="cover-heading">Javascript30 Projects</h1>
-
-
-          <ul>
-            <li>
-              <a href="01-drumkit">01 Drum Kit</a>
-            </li>
-          </ul>
+          <div class="card-columns">
+            <div class="card">
+              <a href="./01-drumkit/index.html"><img class="card-img-top" src="./images/clark-young-410369.jpg" alt="Card image cap"></a>
+              <div class="card-body">
+                <h2 class="card-title"><a href="./01-drumkit/index.html">Drum Kit (01)</a></h2>
+                <p class="card-text">An interactive soundboard</p>
+              </div>
+              <div class="card-footer"> 
+                <small class="text-muted"><span class="octicon octicon-pencil"><span class="sr-only">Edit</span></span> Last updated <span class="updatedTime">02/04/2018</span></script></small>
+              </div>
+            </div>
+          </div>
         </div>
     </main>
     <footer class=" p-3 mastfoot mt-auto">
@@ -52,7 +65,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"></script>
     <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script>
+      // loop through time data and get relative update
+      var list = document.getElementsByClassName("updatedTime");
+      for (var i = 0; i < list.length; i++) {
+        list[i].innerHTML = updatedAt(list[i].innerText)
+      }
+    </script>
 </body>
 
 </html>
