@@ -1,0 +1,22 @@
+{
+  "name": "javascript30",
+  "version": "1.0.0",
+  "description": "Javascript30 implementing Bootstrap 4 official release",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virtual/javascript30.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/virtual/javascript30/issues"
+  },
+  "homepage": "https://github.com/virtual/javascript30#readme",
+  "dependencies": {
+    "octicons": "^7.1.0"
+  }
+}
