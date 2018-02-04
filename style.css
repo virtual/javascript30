@@ -1,0 +1,23 @@
+body, html { 
+background: 
+      /* top, transparent red, faked with gradient */ 
+      linear-gradient(
+        rgba(51, 40, 40, 0.151), 
+        rgba(95, 45, 45, 0.151)
+      ),
+      /* bottom, image */
+      url('./images/dimitris-adalialis-26303.jpg')
+      no-repeat bottom center fixed
+      ;
+
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+
+      color:#fff;
+}
+
+
+main {flex: 1; padding-top: 1rem; padding-bottom: 1rem; }
