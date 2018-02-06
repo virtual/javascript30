@@ -1,0 +1,36 @@
+body, html { 
+  background: 
+        /* top, transparent red, faked with gradient */ 
+        linear-gradient(
+          rgba(51, 40, 40, 0.151), 
+          rgba(95, 45, 45, 0.151)
+        ),
+        /* bottom, image */
+        url('./marc-antoine-depelteau-268516.jpg')
+        no-repeat bottom center fixed
+        ;
+  
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  
+  
+        color:#fff;
+        height: 100%;
+  } 
+  .key { 
+    border: 1px solid #fff;
+    padding: 1rem;
+    display: inline-block;
+    list-style: none;
+    margin: .5rem; 
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;  
+    transition: all 0.5s ease;
+    background: rgba(104, 101, 68, 0.2);
+  }
+  .key:hover, .key.active { border: 1px solid rgb(255, 248, 48);box-shadow: -1px 1px 3px #8d921f; }
+  .key.active { background: rgba(255, 247, 134, 0.2); text-shadow:0px 0px 13px #463e03; }
+  .sound { display:block;clear:both; font-size: .5rem; color:  rgb(255, 248, 48);}
