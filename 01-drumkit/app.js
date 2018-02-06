@@ -1,4 +1,9 @@
-function playSound(sound, key) {
+function playSound(sound) {
+  var audio = new Audio('./sounds/'+sound+'.wav');
+  audio.play();
+}
+
+function activateSound(sound, key) {
   if (sound) {
     Array.from(document.getElementsByClassName("key")).forEach((e)=>{
       e.classList.remove("active")
@@ -7,45 +12,39 @@ function playSound(sound, key) {
     window.setTimeout(function(){
       document.getElementById("key-"+ key.toLowerCase()).classList.remove("active");
     }, 300);
-    console.log(sound);
-  } else {
-    console.log("no sounds")
+    playSound(sound);
   }
 }
 
-playSound();
-
 document.addEventListener('keypress', (event) => {
   var key = ("" + event.key).toUpperCase();
-  //console.log(key.toLowerCase())
-  //console.log(key)
   switch (key) {
     case "A":
-      playSound('clap', key)
+      activateSound('clap', key)
       break;
     case "S":
-      playSound('hihat', key)
+      activateSound('hihat', key)
       break;
     case "D":
-      playSound('kick', key)
+      activateSound('kick', key)
       break;
     case "F":
-      playSound('openhat', key)
+      activateSound('openhat', key)
       break;
     case "G":
-      playSound('boom', key)
+      activateSound('boom', key)
       break;
     case "H":
-      playSound('ride', key)
+      activateSound('ride', key)
       break;
     case "J":
-      playSound('snare', key)
+      activateSound('snare', key)
       break;
     case "K":
-      playSound('tom', key)
+      activateSound('tom', key)
       break;
     case "L":
-      playSound('tink', key)
+      activateSound('tink', key)
       break;
   }
 })
