@@ -1,6 +1,6 @@
-![Drum Library](javascript30/01-clock/01-drumkit.png)
+![Drum Library](https://raw.githubusercontent.com/virtual/javascript30/master/01-drumkit/01-drumkit.png)
 
-![Clock 02](javascript30/02-clock/thumbnail.png)
+![Clock 02](https://raw.githubusercontent.com/virtual/javascript30/master/02-clock/thumbnail.png)
 
 Javascript30 implementing Bootstrap 4 official release
 
