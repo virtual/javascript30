@@ -1,0 +1,50 @@
+body, html { 
+  background: 
+        /* top, transparent red, faked with gradient */ 
+        linear-gradient(
+          rgba(51, 40, 40, 0.151), 
+          rgba(95, 45, 45, 0.151)
+        ),
+        /* bottom, image */
+        url('./matt-palmer-171734.jpg')
+        no-repeat bottom center fixed
+        ;
+  
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  
+  
+        color:#fff;
+        height: 100%;
+  } 
+
+  #clock { 
+    position: relative;
+    background:rgba(0, 0, 0, 0.55);  
+    border: 1px solid #333;
+    border-radius: 50%; 
+    width: 30vh; height: 30vh; }
+  #clock-hour, #clock-min, #clock-sec {
+    position: absolute;
+    bottom: 50%;
+    background:#f00;
+    width:50%; height:1px; border-bottom: 1px solid #fff; 
+    transform-origin: 100%;
+  }
+  #clock-hour { border-width: 3px; transform: rotate(230deg); margin-left:20%; width: 30%;}
+  #clock-min {
+    border-width: 2px; transform: rotate(30deg); width: 40%; margin-left: 10%;
+  }
+  #clock-sec { border-bottom: 1px solid #666; width: 47%; margin-left: 3%;}
+
+  #time {
+    color:rgba(204, 204, 204, 0.404);
+    clear:both; 
+    display:block;
+    width:100%;
+    bottom:0;
+    padding: 5px;
+    position:absolute;
+}
