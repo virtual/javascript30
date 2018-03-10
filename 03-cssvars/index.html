@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Variables</title>
+  <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark inverse text-light">
+
+    <main class="container">
+        <div class="row">
+            <div class="col-12">
+              <h1>Updating <span class="highlight">CSS Variables</span> with JavaScript</h1>
+              <label>Spacing <input type="range" max="50" value="10" data-property="spacing" data-sizing="px" class="controls" /></label><br/>
+              <label>Blur <input type="range" max="50" value="1" data-property="blur" data-sizing="px" class="controls" /></label><br/>
+              <label>Color <input type="color" value="#003f7f" data-property="base" class="controls" /></label>
+             </div> 
+        </div>
+        <div class="row">
+            <div class="col-12">
+              <img class="alterimg" src='./ivo-paul-van-vliet-479547-unsplash.jpg' alt="helicopter above a snowy mountain"/>
+            </div> 
+        </div>
+      </main>
+ 
+  <script src="./app.js"></script>
+</body>
+</html>

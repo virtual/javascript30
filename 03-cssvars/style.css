@@ -1,0 +1,12 @@
+:root {
+  --base: #0037f7;
+  --spacing: 10px;
+  --blur: 1px;
+}
+img { max-width: 100%; height: auto;}
+.alterimg {
+  background-color: var(--base);
+  padding: var(--spacing);
+  filter: blur(var(--blur))
+}
+.highlight { color: var(--base)}
