@@ -11,14 +11,19 @@
 <body class="bg-dark inverse text-light">
 
     <main class="container">
-        <div class="row">
-            <div class="col-12">
-              <h1>Updating <span class="highlight">CSS Variables</span> with JavaScript</h1>
-              <label>Spacing <input type="range" max="50" value="10" data-property="spacing" data-sizing="px" class="controls" /></label><br/>
-              <label>Blur <input type="range" max="50" value="1" data-property="blur" data-sizing="px" class="controls" /></label><br/>
-              <label>Color <input type="color" value="#003f7f" data-property="base" class="controls" /></label>
-             </div> 
-        </div>
+        <div class="jumbotron bg-dark">
+            <div class="container">
+              <h1 class="display-4">Updating <span class="highlight">CSS Variables</span> with JavaScript</h1>
+              <p class="lead">Using input sliders, update the CSS variables set on the root element.</p>
+              <hr/>
+              <div class="row text-center">
+                  <div class="col-4"><label>Spacing<br/> <input type="range" max="50" value="10" data-property="spacing" data-sizing="px" class="controls" /></label></div>
+                  <div class="col-5"><label>Blur<br/> <input type="range" max="50" value="1" data-property="blur" data-sizing="px" class="controls" /></label></div>
+                  <div class="col-3"><label>Color<br/> <input type="color" value="#003f7f" data-property="base" class="controls" /></label></div>
+            </div>
+            <hr/>
+          </div>
+ 
         <div class="row">
             <div class="col-12">
               <img class="alterimg" src='./ivo-paul-van-vliet-479547-unsplash.jpg' alt="helicopter above a snowy mountain"/>
