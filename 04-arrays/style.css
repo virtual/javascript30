@@ -1,1 +1,3 @@
+html,body { margin:0;padding:0;}
+body { padding: 1rem;}
 #output {background:#fff; padding: 1rem; display: block}
