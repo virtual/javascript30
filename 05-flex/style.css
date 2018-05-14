@@ -1,12 +1,63 @@
  
 
-  .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
-  .panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
-  .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
-  .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
-  .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+  .panel1 { background-image:url('img/mountains.jpg'); }
+  .panel2 { background-image:url('img/flashlight.jpg'); }
+  .panel3 { background-image:url('img/hike.jpg'); }
+  .panel4 { background-image:url('img/fox.jpg'); }
+  .panel5 { background-image:url('img/field.jpg'); }
 
-  main { width: 100%; display:block; background:#333;}
-  .panels { display:flex;  justify-content: stretch; align-items: stretch;height: 100vh; }
-  .panels > div { flex: 1;  align-items: center;display:flex;justify-content: space-around; flex-direction: column;}
-  .panels > div p { color:#fff; font-weight: 600; font-size: 1.5rem; text-shadow: 0px 1px 6px #333; }
+  main { font-weight: 300; width: 100%; display:block; background:#333;font-family: 'Amatic SC', cursive;}
+  .panels {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .panels .panel {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    transition:
+    font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    background 0.2s;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  .panel p {
+     
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0px 1px 6px #333; 
+    font-size: 3rem;
+    transition: transform 0.5s, font-size .8s ease-in-out;
+  }
+
+  .panel p:first-child {
+    transform: translateY(-100%);
+  }  
+  .panel p:last-child {
+    transform: translateY(100%);
+  }
+  .panel.open-active p:first-child, .panel.open-active p:last-child {
+    transform: translateY(0);
+  }
+  .panel p:nth-of-type(2n+2) {
+    font-size: 5rem;  
+  }
+  .panels .panel.open { flex: 5;}
+  .panel.open p { font-size: 4rem; }
+  .panel.open p:nth-of-type(2n+2) {
+    font-size: 8rem;  
+  }
