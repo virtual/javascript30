@@ -18,7 +18,16 @@ background:
 
       color:#fff;
 }
-
+.card-columns .card { margin-bottom: 1rem; }
 .card a { color:#000; font-size: 1.5rem;}
 .card-title { line-height: 1;}
 main {flex: 1; padding-top: 1rem; padding-bottom: 1rem; color:initial; }
+@media (min-width: 576px) {
+  .card-columns { column-count: 2;}
+}
+@media (min-width: 768px) {
+  .card-columns { column-count: 3;}
+}
+@media (min-width: 1100px) {
+  .card-columns { column-count: 4;}
+}
