@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dev Tools and Console Logging</title>
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../assets/css/prism.css" />
+    <meta property="og:image" content="./thumbnail.png" />
+  </head>
+  <body>
+    <main>
+      <h1>Dev Tools and Console Logging</h1>
+      <p><em>Also view the console</em></p>
+
+      <p onClick="makeGreen()">×BREAK×DOWN×</p>
+  <pre><code class="language-javascript">Inspect `×BREAK×DOWN×`, break on attribute modifications</code></pre>
+
+  <pre><code class="language-javascript">// Regular
+  console.log("Cats mew")</code></pre>
+
+  <pre><code class="language-javascript">// Interpolated
+  console.log("%s cats mew", 'blue')</code></pre>
+
+  <pre><code class="language-javascript">// Styled
+  console.log("%cpink cats mew", 'color: lightpink')</code></pre>
+
+  <pre><code class="language-javascript">// warning!
+  console.warn('warning: cats incoming')</code></pre>
+
+  <pre><code class="language-javascript">// Error :|
+  console.error('error: cats missing')</code></pre>
+
+  <pre><code class="language-javascript">// Info
+  console.info('info: cats came back')</code></pre>
+
+  <pre><code class="language-javascript">// Testing
+  const h1 = document.querySelectorAll('h1');
+  console.assert(h1 != null, 'H1 does not exist');
+  const h2 = document.querySelector('h2');
+  console.assert(h2 != null, 'H2 does not exist');</code></pre>
+
+  <pre><code class="language-javascript">// clearing
+  /* console.clear(); */</code></pre>
+
+  <pre><code class="language-javascript">// Viewing DOM Elements
+  console.log(h1);
+  console.dir(h1);</code></pre>
+
+  <pre><code class="language-javascript">// Grouping together 
+  cats.forEach(cat => {
+    /* can also used .group for uncollapsed */
+    console.groupCollapsed(`${cat.name}`);
+    console.log(`This is ${cat.name}`);
+    console.log(`${cat.name} is ${cat.age} years old`);
+    console.log(`${cat.name} is ${cat.age * 7} cat years old`);
+    console.groupEnd(`${cat.name}`);
+  });</code></pre>
+
+  <pre><code class="language-javascript">// counting
+  console.count('mew')
+  console.count('mew')
+  console.count('arf')
+  console.count('arf')
+  console.count('mew')</code></pre>
+
+  <pre><code class="language-javascript">// timing 
+  console.time('fetching data');
+  fetch('https://api.github.com/users/</code></pre>
+
+
+
+
+
+
+
+    </main>
+
+    <script src="../assets/js/prism.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

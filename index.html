@@ -14,7 +14,9 @@
     <script>
         function updatedAt(date) {
           if (date) {
-            return ( moment(new Date(date)).fromNow() )
+            // MST: UTC -7 
+            // return ( moment((new Date(date)) + "-07:00").fromNow() )
+            return ( moment((new Date(date))).fromNow() )
           } 
         }
     </script>
@@ -126,6 +128,18 @@
               </div>
               <div class="card-footer"> 
                 <small class="text-muted"><span class="octicon octicon-pencil"><span class="sr-only">Edit</span></span> Last updated <span class="updatedTime">03/21/2020</span></script></small>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <a href="./09-dev-tools/index.html"><img class="card-img-top" src="./09-dev-tools/thumbnail.png" alt="error consoles shown in browser log"></a>
+              <div class="card-body">
+                <h2 class="card-title"><a href="./09-dev-tools/index.html">Dev Tools (09)</a></h2>
+                <p class="card-text">Different methods of using console logging for debugging.</p>
+              </div>
+              <div class="card-footer"> 
+                <small class="text-muted"><span class="octicon octicon-pencil"><span class="sr-only">Edit</span></span> Last updated <span class="updatedTime">03/29/2020 08:23</span></script></small>
               </div>
             </div>
 
