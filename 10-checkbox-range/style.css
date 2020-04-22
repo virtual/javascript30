@@ -50,7 +50,7 @@ html {
 input:checked + label {
   background: #F9F9F9;
   text-decoration: line-through;
-}
+} 
 
 input[type="checkbox"] {
   margin: 20px;

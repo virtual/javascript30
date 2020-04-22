@@ -14,7 +14,7 @@ var checked = true;
 
 document.querySelectorAll('input').forEach(function(item, num) {
   item.addEventListener('click', function(e) {
-    //handle click
+    //handle click also listens for keyboard events
     
     // console.log(e, num)
     if (e.shiftKey) {
