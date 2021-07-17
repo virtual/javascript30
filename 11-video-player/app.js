@@ -12,14 +12,12 @@ const ranges = player.querySelectorAll('.player__slider');
 
 // Build our functions
 function togglePlay() {
-  console.log('toggleplay')
     if (video.paused) { // There's no played property
         video.play();
     } else {
         video.pause();
     }
     return false;
-
 }
 
 function skip(el) {
@@ -34,7 +32,6 @@ function handleRangeUpdate(el) {
 function updateButton() {
     const icon = this.paused ? '►' : '❚ ❚';
     toggle.textContent = icon;
-    console.log(icon)
 }
 
 function handleProgress() {
@@ -55,7 +52,6 @@ function toggleFullScreen() {
 
 // Unnecessary as the video autoplays on click
 // video.addEventListener('click', function(e) {
-//     console.log('talk')
 //     togglePlay();
 // })
 
