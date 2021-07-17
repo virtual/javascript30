@@ -2,9 +2,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-
   background: #eee;
-
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
   width: 100%;
   height: 100vh;
 }
@@ -29,7 +28,11 @@ html {
   background: #fff;
 }
  
-
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .player {
   max-width: 750px;
   border: 5px solid rgba(0,0,0,0.2);
@@ -110,10 +113,10 @@ html {
 }
 
 .progress__filled {
-  width: 50%;
+  width: 0%;
   background: #ffc600;
   flex: 0;
-  flex-basis: 50%;
+  flex-basis: 0%;
 }
 
 /* unholy css to style input type="range" */
